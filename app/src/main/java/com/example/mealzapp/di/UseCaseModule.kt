@@ -1,7 +1,7 @@
 package com.example.mealzapp.di
 
 import com.example.domain.repo.MealsRepo
-import com.example.domain.usecase.GetAllMealCategoriesUseCase
+import com.example.domain.usecase.MealCategoriesUseCase
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -14,5 +14,5 @@ import javax.inject.Singleton
 object UseCaseModule {
     @Singleton
     @Provides
-    fun provideGetAllMealCategoriesUseCase(mealsRepo: MealsRepo): GetAllMealCategoriesUseCase = GetAllMealCategoriesUseCase(mealsRepo)
+    fun provideMealCategoriesUseCase(mealsRepo: MealsRepo): MealCategoriesUseCase = MealCategoriesUseCase(mealsRepo)
 }

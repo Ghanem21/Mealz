@@ -1,9 +1,7 @@
 package com.example.domain.entity.response.allMealCategoriesResponse
 
 import com.squareup.moshi.Json
-import com.squareup.moshi.JsonClass
 
-@JsonClass(generateAdapter = true)
 data class Category(
     @Json(name = "idCategory")
     val id: String,

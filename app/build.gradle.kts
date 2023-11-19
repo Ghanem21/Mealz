@@ -73,6 +73,9 @@ dependencies {
     implementation(libs.androidx.work.runtime.ktx)
     implementation(libs.androidx.hilt.navigation.compose)
 
+    //timber
+    implementation(libs.timber)
+
     implementation(project(":data"))
     implementation(project(":domain"))
 
